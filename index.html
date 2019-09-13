@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <nav>
+      <div class = "topnav">
+          <!--
+           <li><a href="#">Little Kid Lovers</a></li>
+           <li><a href="#">Born on a Beach</a></li>
+           <li><a href="#">Hypothetical Camping Trip</a></li>
+           <li><a href="#">Knights of the Night</a></li>
+           <li><a href="#">Voodoo Mama Juju</a></li>
+           <li><a href="#">How the Turned Tables</a></li>
+           <li><a href="#">Threat Level Midnight</a></li>
+           <li><a href="#">Quad Desk</a></li>
+         -->
+          <div class="topnav-right">
+            <a href="https://www.linkedin.com/in/griffin-withington-196503135/">LinkedIn</a>
+            <a href="https://github.com/Griffin-Withington/playoffprobability/">github</a>
+          </div>
+        </div>
+      </nav>
+    <div class="wrapper">
+      <h2 class = "introHead"><br><br><br>Welcome to the Michael Scott Paper Company Fantasy Football League's<h2>
+      <h1 id="ppe">PLAYOFF PROBABILITY ENGINE</h1>
+      <br>
+      <center>Probabilities generated from 100,000 simulated seasons <br> Updates every tuesday 7:00am
+      <br>
+      <a href="https://fantasy.espn.com/football/league?leagueId=1821681">League Home</a></center>
+      <br><br>
+
+      <br>
+
+
+      <table class = MSPC>
+        <tr>
+          <th>Team</th>
+          <th>Division</th>
+          <th>Elo Score</th>
+          <th>Record</th>
+          <th>Exp. Wins</th>
+          <th>Playoff Probability</th>
+        </tr>
+        <tr>
+          <td>Little Kid Lovers</td>
+          <td>Office</td>
+          <td>138.5</td>
+          <td>1 - 0</td>
+          <td>14</td>
+          <td>100%</td>
+        </tr>
+        <tr>
+          <td>Born on a Beach</td>
+          <td>Warehouse</td>
+          <td>137.6</td>
+          <td>1 - 0</td>
+          <td>13</td>
+          <td>100%</td>
+        </tr>
+        <tr>
+          <td>Threat Level Midnight</td>
+          <td>Warehouse</td>
+          <td>135.2</td>
+          <td>1 - 0</td>
+          <td>12</td>
+          <td>100%</td>
+        </tr>
+        <tr>
+          <td>Quad Desk</td>
+          <td>Office</td>
+          <td>134.8</td>
+          <td>0 - 1</td>
+          <td>11</td>
+          <td>50%</td>
+        </tr>
+        <tr>
+          <td>How the Turned Tables</td>
+          <td>Warehouse</td>
+          <td>127.6</td>
+          <td>1 - 0</td>
+          <td>9</td>
+          <td>50%</td>
+        </tr>
+        <tr>
+          <td>Voodoo Mama Juju</td>
+          <td>Office</td>
+          <td>116.0</td>
+          <td>0 - 1</td>
+          <td>3</td>
+          <td>0%</td>
+        </tr>
+        <tr>
+          <td>Knights of the Night</td>
+          <td>Office</td>
+          <td>103.4</td>
+          <td>0 - 1</td>
+          <td>2</td>
+          <td>0%</td>
+        </tr>
+        <tr>
+          <td>Hypothetical Camping Trip</td>
+          <td>Warehouse</td>
+          <td>75.6</td>
+          <td>0 - 1</td>
+          <td>0</td>
+          <td>0%</td>
+        </tr>
+      </table>
+    </div>
+
+    <br><br><br>
+
+    <div class="ELOSCORE">
+      <h3>How this works:</h3>
+      <br>
+      <img src="sigmoid.png" alt="Sigmoid">
+      <h4>Elo score is determined via a recency-biased weighted average of a team's scores,
+        with weekly weights determined by the sigmoid function above</h4>
+        <br>
+        Specifically, a given week's weighting for elo score is 1 / (1 + <i>e</i><sup>0.5(<i>week</i> + 6 - <i>weeks played</i>)</sup>)
+        <br>
+        Using the same method, weighted standard deviation is also generated, with future weeks' scores
+        randomly generated from the resulting normal distribution
+        <br><br><br>
+        <h3>Projected Score Distribution based on Elo:</h3>
+      </div>
+
+        <img src="weekoneelo.png" alt="Elo Score">
+        <br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

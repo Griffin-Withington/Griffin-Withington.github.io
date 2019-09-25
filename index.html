@@ -1,29 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <title>Hello World!</title>
+    <title>Michael Scott Paper Company</title>
   </head>
   <body>
     <nav>
       <div class = "topnav">
-          <!--
-           <li><a href="#">Little Kid Lovers</a></li>
-           <li><a href="#">Born on a Beach</a></li>
-           <li><a href="#">Hypothetical Camping Trip</a></li>
-           <li><a href="#">Knights of the Night</a></li>
-           <li><a href="#">Voodoo Mama Juju</a></li>
-           <li><a href="#">How the Turned Tables</a></li>
-           <li><a href="#">Threat Level Midnight</a></li>
-           <li><a href="#">Quad Desk</a></li>
-         -->
-          <div class="topnav-right">
-            <a href="https://www.linkedin.com/in/griffin-withington-196503135/">LinkedIn</a>
-            <a href="https://github.com/Griffin-Withington/playoffprobability/">github</a>
-          </div>
+        <div class="topnav-right">
+          <a href="https://www.linkedin.com/in/griffin-withington-196503135/">LinkedIn</a>
+          <a href="https://github.com/Griffin-Withington/playoffprobability/">github</a>
         </div>
-      </nav>
+      </div>
+    </nav>
     <div class="wrapper">
       <h2 class = "introHead"><br><br><br>Welcome to the Michael Scott Paper Company Fantasy Football League's<h2>
       <h1 id="ppe">PLAYOFF PROBABILITY ENGINE</h1>
@@ -34,82 +25,85 @@
       <br><br>
 
       <br>
+        <table border="0" class="dataframe MSPC">
+  <thead>
+    <tr style="text-align: center;">
+      <th>Team</th>
+      <th>Division</th>
+      <th>Elo Score</th>
+      <th>Record</th>
+      <th>Exp. Wins</th>
+      <th>Playoff Prob</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Born on a Beach</td>
+      <td>Warehouse</td>
+      <td>136.7</td>
+      <td>2 - 1</td>
+      <td>9.8</td>
+      <td>97.0%</td>
+    </tr>
+    <tr>
+      <td>Threat Level Midnight</td>
+      <td>Warehouse</td>
+      <td>134.7</td>
+      <td>2 - 1</td>
+      <td>9.6</td>
+      <td>95.9%</td>
+    </tr>
+    <tr>
+      <td>Knights of the Night</td>
+      <td>Warehouse</td>
+      <td>126.3</td>
+      <td>2 - 1</td>
+      <td>8.4</td>
+      <td>78.6%</td>
+    </tr>
+    <tr>
+      <td>Little Kid Lovers</td>
+      <td>Office</td>
+      <td>131.5</td>
+      <td>2 - 1</td>
+      <td>8.2</td>
+      <td>86.0%</td>
+    </tr>
+    <tr>
+      <td>How the Turned Tables</td>
+      <td>Office</td>
+      <td>107.3</td>
+      <td>2 - 1</td>
+      <td>6.1</td>
+      <td>21.0%</td>
+    </tr>
+    <tr>
+      <td>Quad Desk</td>
+      <td>Warehouse</td>
+      <td>118.3</td>
+      <td>0 - 3</td>
+      <td>5.7</td>
+      <td>14.6%</td>
+    </tr>
+    <tr>
+      <td>Voodoo Mama Juju</td>
+      <td>Office</td>
+      <td>108.1</td>
+      <td>1 - 2</td>
+      <td>4.8</td>
+      <td>6.3%</td>
+    </tr>
+    <tr>
+      <td>Hypothetical Camping Trip</td>
+      <td>Office</td>
+      <td>84.4</td>
+      <td>1 - 2</td>
+      <td>3.4</td>
+      <td>0.6%</td>
+    </tr>
+  </tbody>
+</table>
 
-
-      <table class = MSPC>
-        <tr>
-          <th>Team</th>
-          <th>Division</th>
-          <th>Elo Score</th>
-          <th>Record</th>
-          <th>Exp. Wins</th>
-          <th>Playoff Probability</th>
-        </tr>
-        <tr>
-          <td>Little Kid Lovers</td>
-          <td>Office</td>
-          <td>138.5</td>
-          <td>1 - 0</td>
-          <td>14</td>
-          <td>100%</td>
-        </tr>
-        <tr>
-          <td>Born on a Beach</td>
-          <td>Warehouse</td>
-          <td>137.6</td>
-          <td>1 - 0</td>
-          <td>13</td>
-          <td>100%</td>
-        </tr>
-        <tr>
-          <td>Threat Level Midnight</td>
-          <td>Warehouse</td>
-          <td>135.2</td>
-          <td>1 - 0</td>
-          <td>12</td>
-          <td>100%</td>
-        </tr>
-        <tr>
-          <td>Quad Desk</td>
-          <td>Office</td>
-          <td>134.8</td>
-          <td>0 - 1</td>
-          <td>11</td>
-          <td>50%</td>
-        </tr>
-        <tr>
-          <td>How the Turned Tables</td>
-          <td>Warehouse</td>
-          <td>127.6</td>
-          <td>1 - 0</td>
-          <td>9</td>
-          <td>50%</td>
-        </tr>
-        <tr>
-          <td>Voodoo Mama Juju</td>
-          <td>Office</td>
-          <td>116.0</td>
-          <td>0 - 1</td>
-          <td>3</td>
-          <td>0%</td>
-        </tr>
-        <tr>
-          <td>Knights of the Night</td>
-          <td>Office</td>
-          <td>103.4</td>
-          <td>0 - 1</td>
-          <td>2</td>
-          <td>0%</td>
-        </tr>
-        <tr>
-          <td>Hypothetical Camping Trip</td>
-          <td>Warehouse</td>
-          <td>75.6</td>
-          <td>0 - 1</td>
-          <td>0</td>
-          <td>0%</td>
-        </tr>
-      </table>
     </div>
 
     <br><br><br>
@@ -129,7 +123,7 @@
         <h3>Projected Score Distribution based on Elo:</h3>
       </div>
 
-        <img src="weekoneelo.png" alt="Elo Score">
+        <img src="elonormals.png" alt="Elo Score">
         <br><br><br><br><br>
 
 
